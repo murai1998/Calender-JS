@@ -1,11 +1,12 @@
-html,
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-.container {
+body {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+
   justify-content: center;
   align-items: center;
 }
@@ -13,4 +14,9 @@ body {
   width: 80vw;
   height: 80vh;
   border: 2px solid black;
+  display: flex;
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
 }

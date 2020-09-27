@@ -25,3 +25,40 @@
   justify-content: space-evenly;
   align-items: center;
 }
+.date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.date p {
+  font-size: 1.3em;
+  padding-top: 1.3vh;
+}
+.arrows {
+  font-size: 2em;
+}
+.weekdays {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  color: rgb(34, 114, 179);
+  padding: 0 0.5vw;
+}
+.weekdays div {
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  width: calc(84vw / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 700px) {
+  .weekdays div {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 0.3rem;
+  }
+}

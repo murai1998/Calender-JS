@@ -72,7 +72,13 @@
   justify-content: center;
   align-items: center;
   height: 2rem;
-  outline: 1px solid #036cdb;
+  /* outline: 1px solid #036cdb; */
+  transition: background-color 0.2s;
+}
+.days div:hover:not(.today) {
+  background-color: white;
+  cursor: pointer;
+  border: 0.2rem solid lightgrey;
 }
 @media (min-width: 700px) {
   .weekdays div {
@@ -90,5 +96,13 @@
   }
   .days div {
     height: 5rem;
+    font-size: 1.7rem;
   }
+}
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+.today {
+  background: rgb(134, 189, 235);
 }

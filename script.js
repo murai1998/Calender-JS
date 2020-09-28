@@ -42,10 +42,11 @@ const render = () => {
       date.getMonth() === new Date().getMonth()
     ) {
       days += `<div class='today'>${i}</div>`;
+    } else {
+      days += `<div >${i}</div>`;
     }
-    days += `<div >${i}</div>`;
   }
-  for (let i = 1; i < 6 - lastDayIndex; i++) {
+  for (let i = 1; i <= 6 - lastDayIndex; i++) {
     days += `<div class='next-date'>${i}</div>`;
   }
   monthDays.innerHTML = days;

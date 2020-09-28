@@ -53,12 +53,21 @@ const render = () => {
 };
 let prev = document.querySelector(".prev");
 let next = document.querySelector(".next");
+let adds = document.querySelector(".days");
 prev.onclick = () => {
   date.setMonth(date.getMonth() - 1);
+  render();
+};
+adds.onclick = () => {
+  let text = "";
+  text += `<div>Add text</div>`;
+  console.log(text);
+  document.querySelector(".adds").innerHTML = date.toDateString();
   render();
 };
 next.onclick = () => {
   date.setMonth(date.getMonth() + 1);
   render();
 };
+
 render();
